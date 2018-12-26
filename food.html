@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/mystyle.css"/>
+    <title>food</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body class="myBody">
+<nav class="navbar navbar-expand-sm navbar-dark  my_color  mt-3">
+    <a href="#" class="navbar-brand mySize">XiChang</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#der">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="der">
+        <ul class="navbar-nav my_ml">
+            <li class="nav-item my_mr"><a class="nav-link mySize text-white" href="http://127.0.0.1:3008/index.html" >首页</a></li>
+            <li class="nav-item my_mr"><a class="nav-link mySize text-white" href="http://127.0.0.1:3008/tradition.html" >传统文化</a></li>
+            <li class="nav-item my_mr "><a class="nav-link mySize text-white" href="http://127.0.0.1:3008/food.html">美食文化</a></li>
+            <li class="nav-item my_mr"><a class="nav-link mySize text-white" href="#">地理环境</a></li>
+            <li class="nav-item my_mr"><a class="nav-link mySize text-white" href="#">关于我们</a></li>
+            <li class="nav-item my_mr myhidde"><a class="nav-link mySize text-white" href="#">联系我们</a></li>
+        </ul>
+    </div>
+</nav>
+  <div class="container">
+      <!--轮播-->
+      <div class="carousel" data-ride="carousel" id="swiper">
+          <ul class="carousel-indicators">
+              <li data-slide-to="0" data-target="#swiper"></li>
+              <li data-slide-to="1" data-target="#swiper"></li>
+              <li data-slide-to="2" data-target="#swiper"></li>
+              <li data-slide-to="3" data-target="#swiper"></li>
+          </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="#"><img src="http://127.0.0.1:3008/img/food/1.png" alt="" class="w-100"></a>
+            </div>
+            <div class="carousel-item">
+                <a href="#"><img src="http://127.0.0.1:3008/img/food/2.png" alt="" class="w-100"></a>
+            </div>
+            <div class="carousel-item">
+                <a href="#"><img src="http://127.0.0.1:3008/img/food/3.png" alt="" class="w-100"></a>
+            </div>
+            <div class="carousel-item">
+                <a href="#"><img src="http://127.0.0.1:3008/img/food/2.png" alt="" class="w-100"></a>
+            </div>
+        </div>
+          <a href="#swiper" class="carousel-control-prev" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a href="#swiper" class="carousel-control-next" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+          </a>
+      </div>
+      <!--早中晚-->
+      <div>
+      <h3 class="text-info mt-3">美食文化</h3>
+          <a href="#morning" class="nav-link"><h4 class="text-success text-center" style="letter-spacing: 1em;">早餐</h4></a>
+      <div class="mySolid">
+          如今人们的饮食已经越来越向健康靠拢，而且一日之计在于晨，早餐的重要性无需赘言。而健康早餐所要具备的条件就是要有优质的蛋白质，较全面的碳水化合物以及矿物质。美好的早餐开启元气满满的一天！
+      </div>
+      </div>
+      <div>
+          <a href="#total" class="nav-link"><h4 class="text-success text-center mt-3" style="letter-spacing: 1em;">午餐</h4></a>
+      <div class="mySolid">
+          “早餐要吃好，午餐要吃饱，晚餐要吃少”，这种说法确实是有道理的。健康的午餐应以五谷为主，配合大量蔬菜、瓜类及水果，适量肉类、蛋类及鱼类食物，并减少油、盐及糖分，要讲究1：2：3的比例，即六分之一是肉或鱼或蛋类，六分之二是蔬菜，六分之三是饭或粉，要注意三低一高，即低油、低盐、低糖及高纤维。
+      </div>
+      </div>
+      <div>
+          <a href="#after" class="nav-link"><h4 class="text-success text-center mt-3" style="letter-spacing: 1em;">晚餐 </h4></a>
+      <div class="mySolid">
+          晚餐要素吃。晚餐一定要偏素，以富含碳水化合物的食物为主，尤其应多摄入一些新鲜蔬菜，尽量减少过多的蛋白质、脂肪类食物的摄入。要少吃，与早餐、中餐相比，晚餐宜少吃。一般要求晚餐所供给的热量以不超过全日膳食总热量的30%。
+      </div>
+      </div>
+      <h3 class="text-info mt-3">主食专题</h3>
+   <div class="row text-center">
+       <div class="col-lg-3  col-md-6 mb-2">
+          <div class="carousel" data-ride="carousel" id="banner">
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <img src="http://127.0.0.1:3008/img/food/5238.jpeg" alt="" class="w-100">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="http://127.0.0.1:3008/img/food/20171023154237172.jpg" alt="" class="w-100">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="http://127.0.0.1:3008/img/food/20180416094005949.jpg" alt="" class="w-100">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="http://127.0.0.1:3008/img/food/20171204164941275.jpg" alt="" class="w-100">
+                  </div>
+              </div>
+              <a href="#banner" class="carousel-control-prev" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a href="#banner" class="carousel-control-next" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+              </a>
+          </div>
+       </div>
+       <div class="col-lg-3  col-md-6 mb-2">
+           <div class="carousel" data-ride="carousel" id="banner1">
+               <div class="carousel-inner">
+                   <div class="carousel-item active">
+                       <img src="http://127.0.0.1:3008/img/food/20171023102800801.jpg" alt="" class="w-100">
+                   </div>
+                   <div class="carousel-item">
+                       <img src="http://127.0.0.1:3008/img/food/20170928110842808.jpg" alt="" class="w-100">
+                   </div>
+                   <div class="carousel-item">
+                       <img src="http://127.0.0.1:3008/img/food/20170928110842808.jpg" alt="" class="w-100">
+                   </div>
+                   <div class="carousel-item">
+                       <img src="http://127.0.0.1:3008/img/food/20180224191930263.png" alt="" class="w-100">
+                   </div>
+               </div>
+               <a href="#banner1" class="carousel-control-prev" data-slide="prev">
+                   <span class="carousel-control-prev-icon"></span>
+               </a>
+               <a href="#banner1" class="carousel-control-next" data-slide="next">
+                   <span class="carousel-control-next-icon"></span>
+               </a>
+           </div>
+       </div>
+       <div class="col-lg-3  col-md-6 mb-2">
+           <div class="carousel" data-ride="carousel" id="banner2">
+               <div class="carousel-inner">
+                   <div class="carousel-item active">
+                       <img src="http://127.0.0.1:3008/img/food/20181206162533864.jpeg" alt="" class="w-100">
+                   </div>
+                   <div class="carousel-item">
+                       <img src="http://127.0.0.1:3008/img/food/20171031205946267.png" alt="" class="w-100">
+                   </div>
+                   <div class="carousel-item">
+                       <img src="http://127.0.0.1:3008/img/food/6536365.png" alt="" class="w-100">
+                   </div>
+                   <div class="carousel-item">
+                       <img src="http://127.0.0.1:3008/img/food/20181206161719162.jpeg" alt="" class="w-100">
+                   </div>
+               </div>
+               <a href="#banner2" class="carousel-control-prev" data-slide="prev">
+                   <span class="carousel-control-prev-icon"></span>
+               </a>
+               <a href="#banner2" class="carousel-control-next" data-slide="next">
+                   <span class="carousel-control-next-icon"></span>
+               </a>
+           </div>
+       </div>
+       <div class="col-lg-3  col-md-6 mb-2">
+           <div class="carousel" data-ride="carousel" id="banner3">
+               <div class="carousel-inner">
+                   <div class="carousel-item active">
+                       <img src="http://127.0.0.1:3008/img/food/20180416094005949.jpg" alt="" class="w-100">
+                   </div>
+                   <div class="carousel-item">
+                       <img src="http://127.0.0.1:3008/img/food/20171023154237172.jpg" alt="" class="w-100">
+                   </div>
+                   <div class="carousel-item">
+                       <img src="http://127.0.0.1:3008/img/food/5238.jpeg" alt="" class="w-100">
+                   </div>
+                   <div class="carousel-item">
+                       <img src="http://127.0.0.1:3008/img/food/20171204164941275.jpg" alt="" class="w-100">
+                   </div>
+               </div>
+               <a href="#banner3" class="carousel-control-prev" data-slide="prev">
+                   <span class="carousel-control-prev-icon"></span>
+               </a>
+               <a href="#banner3" class="carousel-control-next" data-slide="next">
+                   <span class="carousel-control-next-icon"></span>
+               </a>
+           </div>
+       </div>
+   </div>
+      <h3 class="text-info mt-3">小吃专题</h3>
+      <div class="row text-center">
+          <div class="col-lg-3 col-md-6">
+              <h5 class="text-success">土豆块</h5>
+              <img src="http://127.0.0.1:3008/img/food/53653.png" alt="" class="w-100 img-thumbnail myaa mya">
+          </div>
+          <div class="col-lg-3 col-md-6">
+              <h5 class="text-success">醉虾</h5>
+              <img src="http://127.0.0.1:3008/img/food/678670.jpg" alt="" class="w-100 img-thumbnail myaa mya">
+          </div>
+          <div class="col-lg-3 col-md-6">
+              <h5 class="text-success">米酒凉糕</h5>
+              <img src="http://127.0.0.1:3008/img/food/765430.jpg" alt="" class="w-100 img-thumbnail myaa mya">
+          </div>
+          <div class="col-lg-3 col-md-6">
+              <h5 class="text-success">荞麦蒸饼</h5>
+              <img src="http://127.0.0.1:3008/img/food/5675471.png" alt="" class="w-100 img-thumbnail myaa mya">
+          </div>
+      </div>
+      <!--早餐-->
+      <div class="myDashed mt-3" id="morning">
+          <a href="#"><h3 class="text-info mt-3 text-center">早餐</h3></a>
+      <div class="row text-center">
+          <div class="col-lg-3 col-md-6">
+              <h5 class="text-success">星期一</h5>
+              <img src="http://127.0.0.1:3008/img/food/768681.png" alt="" class="w-100 img-thumbnail myaa mya">
+          </div>
+          <div class="col-lg-3 col-md-6">
+              <h5 class="text-success">星期二</h5>
+              <img src="http://127.0.0.1:3008/img/food/u=3345589725,2122237725&fm=26&gp=0.jpg" alt="" class="w-100 img-thumbnail myaa mya">
+          </div>
+          <div class="col-lg-3 col-md-6">
+              <h5 class="text-success">星期三</h5>
+              <img src="http://127.0.0.1:3008/img/food/098-826&gp=0.jpg" alt="" class="w-100 img-thumbnail myaa mya">
+          </div>
+          <div class="col-lg-3 col-md-6">
+              <h5 class="text-success">星期四</h5>
+              <img src="http://127.0.0.1:3008/img/food/0790.jpg" alt="" class="w-100 img-thumbnail myaa mya">
+          </div>
+      </div>
+          <div class="row text-center">
+              <div class="col-lg-3 col-md-6">
+                  <h5 class="text-success">星期五</h5>
+                  <img src="http://127.0.0.1:3008/img/food/87=0.jpg" alt="" class="w-100 img-thumbnail myaa mya">
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <h5 class="text-success">星期六</h5>
+                  <img src="http://127.0.0.1:3008/img/food/64764=0.jpg" alt="" class="w-100 img-thumbnail myaa mya">
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <h5 class="text-success">星期日</h5>
+                  <img src="http://127.0.0.1:3008/img/food/098-826&gp=0.jpg" alt="" class="w-100 img-thumbnail myaa mya">
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <h5 class="text-success">随机</h5>
+                  <img src="http://127.0.0.1:3008/img/food/0790.jpg" alt="" class="w-100 img-thumbnail myaa mya">
+              </div>
+          </div>
+      </div>
+      <!--午餐-->
+      <div class="myDashed mt-3" id="total">
+          <a href="#"> <h3 class="text-info mt-3 text-center">午餐</h3></a>
+          <div class="row text-center">
+              <div class="col-lg-3 col-md-6">
+                  <h5 class="text-success">星期一</h5>
+                  <img src="http://127.0.0.1:3008/img/food/768681.png" alt="" class="w-100 img-thumbnail myaa mya">
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <h5 class="text-success">星期二</h5>
+                  <img src="http://127.0.0.1:3008/img/food/u=3345589725,2122237725&fm=26&gp=0.jpg" alt="" class="w-100 img-thumbnail myaa mya">
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <h5 class="text-success">星期三</h5>
+                  <img src="http://127.0.0.1:3008/img/food/098-826&gp=0.jpg" alt="" class="w-100 img-thumbnail myaa mya">
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <h5 class="text-success">星期四</h5>
+                  <img src="http://127.0.0.1:3008/img/food/0790.jpg" alt="" class="w-100 img-thumbnail myaa mya">
+              </div>
+          </div>
+          <div class="row text-center">
+              <div class="col-lg-3 col-md-6">
+                  <h5 class="text-success">星期五</h5>
+                  <img src="http://127.0.0.1:3008/img/food/768681.png" alt="" class="w-100 img-thumbnail myaa mya">
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <h5 class="text-success">星期六</h5>
+                  <img src="http://127.0.0.1:3008/img/food/u=3345589725,2122237725&fm=26&gp=0.jpg" alt="" class="w-100 img-thumbnail myaa mya">
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <h5 class="text-success">星期日</h5>
+                  <img src="http://127.0.0.1:3008/img/food/098-826&gp=0.jpg" alt="" class="w-100 img-thumbnail myaa mya">
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <h5 class="text-success">随机</h5>
+                  <img src="http://127.0.0.1:3008/img/food/0790.jpg" alt="" class="w-100 img-thumbnail myaa mya">
+              </div>
+          </div>
+      </div>
+      <!--晚餐-->
+      <div class="myDashed mt-3" id="after">
+          <a href="#"><h3 class="text-info mt-3 text-center">晚餐</h3></a>
+          <div class="row text-center">
+              <div class="col-lg-3 col-md-6">
+                  <h5 class="text-success">土豆块</h5>
+                  <img src="http://127.0.0.1:3008/img/food/768681.png" alt="" class="w-100 img-thumbnail myaa mya">
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <h5 class="text-success">醉虾</h5>
+                  <img src="http://127.0.0.1:3008/img/food/u=3345589725,2122237725&fm=26&gp=0.jpg" alt="" class="w-100 img-thumbnail myaa mya">
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <h5 class="text-success">米酒凉糕</h5>
+                  <img src="http://127.0.0.1:3008/img/food/098-826&gp=0.jpg" alt="" class="w-100 img-thumbnail myaa mya">
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <h5 class="text-success">荞麦蒸饼</h5>
+                  <img src="http://127.0.0.1:3008/img/food/0790.jpg" alt="" class="w-100 img-thumbnail myaa mya">
+              </div>
+          </div>
+          <div class="row text-center">
+              <div class="col-lg-3 col-md-6">
+                  <h5 class="text-success">土豆块</h5>
+                  <img src="http://127.0.0.1:3008/img/food/768681.png" alt="" class="w-100 img-thumbnail myaa mya">
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <h5 class="text-success">醉虾</h5>
+                  <img src="http://127.0.0.1:3008/img/food/u=3345589725,2122237725&fm=26&gp=0.jpg" alt="" class="w-100 img-thumbnail myaa mya">
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <h5 class="text-success">米酒凉糕</h5>
+                  <img src="http://127.0.0.1:3008/img/food/098-826&gp=0.jpg" alt="" class="w-100 img-thumbnail myaa mya">
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <h5 class="text-success">荞麦蒸饼</h5>
+                  <img src="http://127.0.0.1:3008/img/food/0790.jpg" alt="" class="w-100 img-thumbnail myaa mya">
+              </div>
+          </div>
+      </div>
+  </div>
+<!--底部-->
+<div class="row my_color mt-3 w-100" id="a1">
+    <div class="my_footer justify-content-around">
+        <div class="col-md-4 text-white">
+            <h4 class="mt-4">联系我们</h4>
+            <ul class="list-unstyled">
+                <li class="mt-4">地址：四川省西昌市</li>
+                <li>邮编：615500</li>
+                <li>电话：12345678</li>
+                <li>手机123-4563-7890</li>
+                <li>传真：123-7841-4568</li>
+                <li>邮编：1234564@sina.com</li>
+            </ul>
+        </div>
+        <div class="col-md-4 text-white">
+            <h4 class="mt-4">快捷导航</h4>
+            <ul class="list-unstyled">
+                <li class="mt-4 mb-3"><a href="#" class="text-white">网站首页</a></li>
+                <li class="mb-3"><a href="#" class="text-white">我们的作品</a></li>
+                <li class="mb-3"><a href="#" class="text-white">关于我们</a></li>
+                <li class="mb-3"><a href="#" class="text-white">我们的团队</a></li>
+            </ul>
+        </div>
+        <div class="col-md-4 text-white">
+            <h4 class="mt-4">联系我们</h4>
+            <ul class="list-unstyled">
+                <li class="mt-4">地址：四川省西昌市</li>
+                <li>邮编：615500</li>
+                <li>电话：12345678</li>
+                <li>手机：123-4563-7890</li>
+                <li>传真：123-7841-4568</li>
+                <li>邮编：1234564@sina.com</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
