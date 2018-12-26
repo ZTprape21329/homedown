@@ -1,0 +1,105 @@
+@media screen and (min-width: 1200px) {
+    .my_ml {
+        margin-left: 14rem;
+    }
+    .myImg{
+        height: 550px;
+    }
+    .myImg1{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .my_mr {
+        margin-right: 4rem;
+    }
+    .my_footer{
+        display: flex;
+        width: 1140px;
+        margin: 0 auto;
+    }
+    .mySolid{
+        text-indent: 2em;
+        font-size: 1.3rem;
+        border-radius: 7%;
+        border: 1px dashed #5e5e5e;
+        padding: 4rem;
+        color: #6c757d;
+    }
+}
+@media screen and (min-width: 992px) and ( max-width: 1199px){
+    .my_ml{
+        margin-left: 10rem;
+    }
+    .my_mr{
+        margin-right: 2rem;
+    }
+   .myImg{
+       height: 400px;
+   }
+    .my_footer{
+        display: flex;
+        width: 100%;
+    }
+    .mySolid{
+        text-indent: 2em;
+        font-size: 1.1rem;
+        border-radius: 5%;
+        border: 1px dashed #5e5e5e;
+        padding: 2rem;
+        color: #878787;
+    }
+}
+
+@media screen and  (max-width: 991px) and ( min-width: 768px){
+    .my_ml{
+        margin-left: 0 !important;
+    }
+    .my_mr{
+        margin-right:0 !important;
+    }
+    .myImg{
+        height: 400px;
+    }
+    .my_fisrt{
+        height: 11rem;
+    }
+    .my_footer{
+        display: flex;
+        width: 100%;
+    }
+    .mySolid{
+        text-indent: 2em;
+        font-size: 1.1rem;
+        border-radius: 5%;
+        border: 1px dashed #117a8b;
+        padding: 1rem;
+        color: #878787;
+    }
+}
+@media screen and (min-width: 300px) and (max-width: 767px){
+    .my_fisrt{
+        height: 14rem;
+    }
+    .my_zoo{
+        width: 100%;
+    }
+    .myFoot{
+        width: 100%;
+        height: 45rem;
+    }
+    .myhidde{
+        display: none;
+    }
+    .mya{
+        display: flex;
+        padding: 0 !important;
+        flex-flow:  row wrap;
+    }
+    .mySolid{
+        text-indent: 2em;
+        border-radius: 5%;
+        border: 1px dashed #117a8b;
+        padding: .3rem;
+        color: #35a4a8;
+    }
+}
